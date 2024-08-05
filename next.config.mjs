@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    output: 'export',
+    assetPrefix: process.env.NODE_ENV === 'production' ? '/Mood2Music/' : '',
+    trailingSlash: true,
+  }
+  
+  export default nextConfig;
